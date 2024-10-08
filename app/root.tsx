@@ -1,10 +1,10 @@
-import { Links, Meta, Outlet, Scripts, type MetaFunction } from "react-router";
-import "~/styles/global.css";
+import { Links, Meta, Outlet, Scripts, type MetaFunction } from 'react-router'
+import '~/styles/global.css'
 
 export const meta: MetaFunction = () => [
-  { title: "React Starter" },
-  { name: "description", content: "Welcome to my personal react starter." },
-];
+  { title: 'React Starter' },
+  { name: 'description', content: 'Welcome to my personal react starter.' },
+]
 
 export default function App() {
   return (
@@ -16,12 +16,12 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <div className="grid place-items-center min-h-screen">
-          <h1 className="text-4xl font-bold ">Hello world!</h1>
+        <div className="grid min-h-screen place-items-center">
+          <h1 className="text-4xl font-bold">Hello world!</h1>
         </div>
         <Outlet />
         <Scripts />
       </body>
     </html>
-  );
+  )
 }

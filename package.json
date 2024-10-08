@@ -7,7 +7,11 @@
   "scripts": {
     "dev": "react-router dev",
     "build": "react-router build",
-    "start": "NODE_ENV=production react-router-serve ./build/server/index.js"
+    "start": "NODE_ENV=production react-router-serve ./build/server/index.js",
+    "prettier": "prettier \"**/*.+(js|jsx|css|ts|tsx|cjs|mjs)\"",
+    "format": "pnpm prettier --list-different",
+    "format:write": "pnpm prettier --write",
+    "typecheck": "tsc"
   },
   "repository": {
     "type": "git",
@@ -28,13 +32,16 @@
   },
   "devDependencies": {
     "@react-router/dev": "^7.0.0-pre.0",
+    "@tailwindcss/vite": "^4.0.0-alpha.26",
     "@total-typescript/tsconfig": "^1.0.4",
     "@types/react": "npm:types-react@rc",
     "@types/react-dom": "npm:types-react-dom@rc",
     "autoprefixer": "^10.4.19",
     "postcss": "^8.4.40",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.6.8",
     "tailwindcss": "^4.0.0-alpha.26",
-    "@tailwindcss/vite": "^4.0.0-alpha.26",
+    "typescript": "^5.6.2",
     "vite": "^5.3.5",
     "vite-tsconfig-paths": "^5.0.1"
   },
