@@ -11,7 +11,8 @@
     "prettier": "prettier \"**/*.+(js|jsx|css|ts|tsx|cjs|mjs)\"",
     "format": "pnpm prettier --list-different",
     "format:write": "pnpm prettier --write",
-    "typecheck": "tsc"
+    "typecheck": "tsc",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
@@ -31,6 +32,7 @@
     "react-router": "^7.0.0-pre.0"
   },
   "devDependencies": {
+    "@eslint/compat": "^1.2.0",
     "@react-router/dev": "^7.0.0-pre.0",
     "@react-router/remix-config-routes-adapter": "0.0.0-nightly-bf7ecb711-20240911",
     "@tailwindcss/vite": "^4.0.0-alpha.26",
@@ -38,12 +40,18 @@
     "@types/react": "npm:types-react@rc",
     "@types/react-dom": "npm:types-react-dom@rc",
     "autoprefixer": "^10.4.19",
+    "eslint": "^9.12.0",
+    "eslint-plugin-import-x": "^4.3.1",
+    "eslint-plugin-react": "^7.37.1",
+    "eslint-plugin-react-hooks": "^4.6.2",
+    "globals": "^15.10.0",
     "postcss": "^8.4.40",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.8",
     "remix-flat-routes": "^0.6.5",
     "tailwindcss": "^4.0.0-alpha.26",
-    "typescript": "^5.6.2",
+    "typescript": "~5.5.4",
+    "typescript-eslint": "^8.8.1",
     "vite": "^5.3.5",
     "vite-tsconfig-paths": "^5.0.1"
   },
