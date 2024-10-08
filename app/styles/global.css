@@ -1,1 +1,6 @@
 @import 'tailwindcss';
+
+@theme {
+  --color-canvas: #111;
+  --color-fg: #fafafa;
+}
