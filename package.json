@@ -1,0 +1,48 @@
+{
+  "name": "minimal-react",
+  "version": "1.0.0",
+  "description": "A minimal react-router stack",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "react-router dev",
+    "build": "react-router build",
+    "start": "NODE_ENV=production react-router-serve ./build/server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/roblesdotdev/minimal-react.git"
+  },
+  "keywords": [
+    "remix"
+  ],
+  "author": "roblesdotdev",
+  "license": "MIT",
+  "dependencies": {
+    "@react-router/node": "^7.0.0-pre.0",
+    "@react-router/serve": "^7.0.0-pre.0",
+    "@tailwindcss/vite": "^4.0.0-alpha.26",
+    "isbot": "^5.1.17",
+    "react": "19.0.0-rc-1460d67c-20241003",
+    "react-dom": "19.0.0-rc-1460d67c-20241003",
+    "react-router": "^7.0.0-pre.0"
+  },
+  "devDependencies": {
+    "@react-router/dev": "^7.0.0-pre.0",
+    "@total-typescript/tsconfig": "^1.0.4",
+    "@types/react": "npm:types-react@rc",
+    "@types/react-dom": "npm:types-react-dom@rc",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.40",
+    "tailwindcss": "^4.0.0-alpha.26",
+    "vite": "^5.3.5",
+    "vite-tsconfig-paths": "^5.0.1"
+  },
+  "overrides": {
+    "@types/react": "$@types/react",
+    "@types/react-dom": "$@types/react-dom",
+    "react": "$react",
+    "react-dom": "$react-dom"
+  },
+  "packageManager": "pnpm@9.12.0"
+}
