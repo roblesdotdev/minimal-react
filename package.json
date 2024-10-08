@@ -12,7 +12,9 @@
     "format": "pnpm prettier --list-different",
     "format:write": "pnpm prettier --write",
     "typecheck": "tsc",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "prepare": "husky",
+    "validate": "run-p typecheck lint format"
   },
   "repository": {
     "type": "git",
@@ -45,6 +47,8 @@
     "eslint-plugin-react": "^7.37.1",
     "eslint-plugin-react-hooks": "^4.6.2",
     "globals": "^15.10.0",
+    "husky": "^9.1.6",
+    "npm-run-all": "^4.1.5",
     "postcss": "^8.4.40",
     "prettier": "^3.3.3",
     "prettier-plugin-tailwindcss": "^0.6.8",
