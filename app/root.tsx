@@ -16,9 +16,6 @@ export default function App() {
         <Links />
       </head>
       <body>
-        <div className="grid min-h-screen place-items-center">
-          <h1 className="text-4xl font-bold">Hello world!</h1>
-        </div>
         <Outlet />
         <Scripts />
       </body>
